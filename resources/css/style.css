@@ -55,14 +55,13 @@ main {
   background-size: cover;
   height: 700px;
   width: 1200px;
-  margin: 15px 45px;
+  margin: 0 45px;
 
 }
 
 .blackbox {
   background-color: black;
   width: 1200px;
-  display: inline-flex;
 }
 
 /* Tea of the Month */
