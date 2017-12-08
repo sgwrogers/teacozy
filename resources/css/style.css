@@ -1,22 +1,32 @@
-* {
+body {
   background-color: black;
 }
 
+h2, h3, h4, h5, p, a {
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Header */
 header {
   border-bottom: 1px solid seashell;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 69px;
-  width: auto;
+  width: 100%;
+
 }
 
 .logo img {
   height: 50px;
   width: auto;
-  left-margin: 10px;
+  margin-left: 10px;
 }
 
 nav {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,10 +34,97 @@ nav {
   width: 450px;
 }
 nav a {
-  color: seashell;
-  font-family: Helvetica;
   font-size: 22px;
-  justify-content: flex-end;
+  text-decoration: underline;
+}
+
+/* Main Banner */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  background: url("../images/img-mission-background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  width: 1200px;
+  margin: 15px 45px;
+
+}
+
+.blackbox {
+  background-color: black;
+  width: 1200px;
+  display: inline-flex;
+}
+
+/* Tea of the Month */
+.tea-month {
+
+}
+
+.tea-month-head {
+  width: 1000px;
+
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+/* Locations */
+.locations {
+  background: url("../images/img-locations-background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  width: 1200px;
+}
+
+.locations-head {
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+.three-blocks {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block {
+  background-color: black;
   opacity: 0.9;
+  height: auto;
+  width: 300px;
+  margin: 15px 20px;
+  line-height: 50px;
+}
+
+/* Footer */
+.contact {
+  height: 200px;
+}
+
+.copyright {
+  display: flex;
+  margin-left: 20px;
 }
